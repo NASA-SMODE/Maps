@@ -96,7 +96,8 @@ def plot_topography(ax,
     
 def plot_map_properties(ax,
                         transform=None,
-                        add_grid=False):
+                        add_grid=False,
+                        continent_facecolor='0.1'):
     """
             TODO: write docstring
     """
@@ -114,7 +115,7 @@ def plot_map_properties(ax,
 
     # Continent
     ax.add_feature(cfeature.NaturalEarthFeature('physical', 'land', '10m',
-                   edgecolor='face', facecolor='0.1')
+                   edgecolor='face', facecolor=continent_facecolor)
     )
 
     # Gridlines
