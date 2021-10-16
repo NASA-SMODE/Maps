@@ -4,6 +4,7 @@
 
 import numpy as np
 import xarray as xr
+import pandas as pd
 
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
@@ -12,10 +13,14 @@ import matplotlib.ticker as mticker
 from mpl_toolkits.axes_grid1 import AxesGrid
 from cartopy.mpl.geoaxes import GeoAxes
 
-from config import OPSAREA, MAPEXTENT
+from config import MAPEXTENT
 
-import matplotlib as mpl
-mpl.rcParams['contour.negative_linestyle']= 'solid'
+# import matplotlib as mpl
+# mpl.rcParams['contour.negative_linestyle']= 'solid'
+
+# Get SMODE area and coastline json files from Github
+map_url = 'https://raw.githubusercontent.com/NASA-SMODE/Maps/main/tools/' 
+ops_area = pd.read_json(map_url + 'ops_area_polygon.json')
 
 def plot_operations_area(ax,
                          transform=None,
@@ -43,14 +48,14 @@ def plot_operations_area(ax,
         kwargs_text['transform'] = transform
                        
     
-    ax.plot(OPSAREA['longitude'],
-            OPSAREA['latitude'],
+    ax.plot(ops_area.longitude.values,
+            ops_area.latitude.values,
             **kwargs_plot
        )
 
     if fill_area:
-        ax.fill(OPSAREA['longitude'],
-                OPSAREA['latitude'],
+        ax.fill(ops_area.longitude.values,
+                ops_area.latitude.values,
                 **kwargs_fill
                )
 
