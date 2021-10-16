@@ -1,4 +1,7 @@
-python>=3.8
+ipython==3.1.0
+numpydoc==0.5
+cython>=0.20
+numpy>=1.8
 pandas==1.0.5
 xarray==0.16.2
 cartopy==0.20.1
