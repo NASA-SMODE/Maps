@@ -18,6 +18,6 @@ shore = pd.read_json(map_url + 'NorthCalShoreLine.json')
 ```
 
 ## Demo Notebooks:
-    - [Plotting a map of the operations area](./MapOperationsArea.ipynb)
-    - [Fetching and visualizing current positions of S-MODE in-situ assets](./InsituAssetsCurrentPosition.ipynb).
-    - [Visualizing basic satellite SST and SSH data](./SSTSnapshot.ipynb).
+- [Plotting a map of the operations area](./MapOperationsArea.ipynb)
+- [Fetching and visualizing current positions of S-MODE in-situ assets](./InsituAssetsCurrentPosition.ipynb).
+- [Visualizing basic satellite SST and SSH data](./SSTSnapshot.ipynb).
