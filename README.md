@@ -1,5 +1,5 @@
 # Maps
-[![License:MIT](https://img.shields.io/badge/License-MIT-lightgray.svg?style=flt-square)](https://opensource.org/licenses/MIT)   [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NASA-SMODE/Maps/HEAD)
+[![License:MIT](https://img.shields.io/badge/License-MIT-lightgray.svg?style=flt-square)](https://opensource.org/licenses/MIT)  [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/NASA-SMODE/Maps/main)
 
 
 This repository contains basic code for manipulating the S-MODE operations area polygon and visualizing ancillary data spatially. The operations area polygon  in `tools/ops_area_polygon.csv` comes from page 7 of S-MODE Pilot Experimental Plan. This polygon is exported to json in the notebook [OpsAreaPolygon.ipynb](./OpsAreaPolygon.ipynb). The operations area file can be read straight from the Github repository:
