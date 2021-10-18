@@ -21,3 +21,6 @@ shore = pd.read_json(map_url + 'NorthCalShoreLine.json')
 - [Plotting a map of the operations area](./MapOperationsArea.ipynb)
 - [Fetching and visualizing current positions of S-MODE in-situ assets](./InsituAssetsCurrentPosition.ipynb).
 - [Visualizing basic satellite SST and SSH data](./SSTSnapshot.ipynb).
+
+## Binder
+Click [here](https://binder.pangeo.io/v2/gh/NASA-SMODE/Maps/main) or on the launch-binder badge above to interact with these notebooks without having to clone the repository and install python.
